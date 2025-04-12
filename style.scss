@@ -93,14 +93,16 @@ body {
   font-style: italic;
 
   li {
-    color: $text-accent;
+    color: $text-accent-alt;
+
     &:hover {
-      color: $text-accent-alt;
+      color: $text-accent;
     }
   }
 }
 
 main {
+  min-height: 100%;
   @media (min-width: 768px) {
     padding-right: 1.5rem;
   }
@@ -132,7 +134,7 @@ h1 {
   img {
     max-width: 80%;
     @media (min-width: 768px) {
-      max-height: 10vh;
+      max-height: 80px;
     }
     object-fit: contain;
   }
@@ -143,8 +145,6 @@ h1 {
 
   @media (min-width: 768px) {
     padding: 0;
-    max-height: 20px;
-    overflow-y: visible;
   }
 }
 
