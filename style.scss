@@ -225,6 +225,19 @@ $from: $stroke*-1;
     }
   }
 
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      margin: 0 5px 50px 0;
+    }
+  }
+
   h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -242,6 +255,7 @@ $from: $stroke*-1;
 
   &-cover {
     padding: 0 10vw;
+    max-height: 30vh;
   }
 
   &-subheading {
